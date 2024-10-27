@@ -1,0 +1,2 @@
+<app-agregar (nuevoItemEvent)="agregarItem($event)"></app-agregar> <!-- Le paso un EventEmitter por que recibo la información del hijo al padre-->
+<app-listado [items]="items" (eliminar)="eliminarItem($event)"></app-listado> <!-- Le enviamos un Input [items] al hijo y recibe un Emitter del hijo al padre-->

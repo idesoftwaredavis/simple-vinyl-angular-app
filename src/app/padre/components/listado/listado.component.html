@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let item of items; let i=index">
+    {{item}}
+    <button (click)="eliminarItem(i) ">Eliminar</button>
+  </li>
+</ul>

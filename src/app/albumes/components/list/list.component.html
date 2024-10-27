@@ -1,0 +1,20 @@
+<h2 class="text-center">Top Vinilos</h2>
+
+<div class="d-flex flex-wrap justify-content-start gap-2">
+  <div *ngFor="let album of albumes" >
+    <div class="card" style="width: 18rem">
+      <button class="text-dark bg-danger text-center col-1" (click)="deleteAlbum(album.id)">X</button>
+      <img src="{{album.portada}}" class="card-img-top" alt="...">
+      <div class="card-body text-center">
+        <h5 class="card-title">{{album.nombre}}</h5>
+        <p class="card-text">{{album.descripcion}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
