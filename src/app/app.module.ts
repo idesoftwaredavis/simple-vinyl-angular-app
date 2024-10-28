@@ -9,6 +9,7 @@ import { AgregarComponent } from './padre/components/agregar/agregar.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { EditNgModelComponent } from './edit-ng-model/edit-ng-model.component';
+import { AddComponent } from './albumes/components/add/add.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { EditNgModelComponent } from './edit-ng-model/edit-ng-model.component';
     PadreComponent,
     ListadoComponent,
     AgregarComponent,
-    EditNgModelComponent
+    EditNgModelComponent,
+
   ],
   imports: [
     BrowserModule,

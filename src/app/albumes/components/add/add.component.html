@@ -1,0 +1,13 @@
+<form>
+  <input type="text" [(ngModel)]="album.nombre" placeholder="Artista" name="nombre">
+  <input type="text" [(ngModel)]="album.descripcion" placeholder="Album" name="descripcion">
+  <input type="text" [(ngModel)]="album.portada" placeholder="Portada" name="portada">
+
+
+
+  <button *ngIf="albumModifier?.nombre; else btnAgregar" type="button" class="btn btn-primary" (click)="modificarEmitter(album)" > Modificar</button>
+
+  <ng-template #btnAgregar>
+    <button type="button" class="btn btn-primary" (click)="agregarAlbumEmitter();">Agregar</button>
+  </ng-template>
+</form>

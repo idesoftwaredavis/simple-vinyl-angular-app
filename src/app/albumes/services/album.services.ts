@@ -85,5 +85,8 @@ export class AlbumService{
     return [...this.dataAlbum]
   }
 
+  public addAlbum(album: Album):void{
+    this.dataAlbum.push(album);
+  }
 }
 

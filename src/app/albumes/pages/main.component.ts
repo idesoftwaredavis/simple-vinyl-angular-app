@@ -28,5 +28,13 @@ export class MainComponent{
     this.getAlbumes();
   }
 
+  public agregarAlbumEmitter(album:Album):void{
+    this._albumService.addAlbum(album);
+    this.getAlbumes();
+  }
+
+  public selectAlbumEmitter(album:Album):void{
+    this.albumModifier = album;
+  }
 
 }

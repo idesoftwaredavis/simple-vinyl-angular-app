@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-edit-ng-model',
   templateUrl: './edit-ng-model.component.html',
-  styleUrls: ['./edit-ng-model.component.css']
 })
 export class EditNgModelComponent {
 

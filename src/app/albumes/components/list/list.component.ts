@@ -18,6 +18,8 @@ export class ListAlbumComponent{
     this.deleteEmitter.emit(id);
   }
 
-
+  public modifierEmitter(album:Album):void{
+    this.fillModifierEmitter.emit(album);
+  }
 
 }

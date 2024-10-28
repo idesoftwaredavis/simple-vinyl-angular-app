@@ -1,6 +1,10 @@
 <div class="row">
-  <div class="col-12">
-    <album-list [albumes]="albumes" (deleteEmitter)="deleteEmitter($event)"></album-list>
+  <div class="col-6">
+    <album-list [albumes]="albumes" (deleteEmitter)="deleteEmitter($event)" (fillModifierEmitter)="selectAlbumEmitter($event)" ></album-list>
+  </div>
+
+  <div class="col-6">
+    <add-app (albumItem)="agregarAlbumEmitter($event)" [albumModifier]="albumModifier" ></add-app>
   </div>
 </div>
 
